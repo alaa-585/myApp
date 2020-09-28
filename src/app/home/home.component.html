@@ -1,0 +1,11 @@
+<h1>Nam3:{{name}}</h1>
+<h2>Age : {{age}} </h2>
+<img [src]="imgSrc" alt="" class="w-25">
+
+<button (click)='welcome()' class="btn btn-danger">Show Alert</button>
+
+<h1 [style.color]="onSale?'red':'green'">Mobile</h1>
+
+<button (click)=(changeSale()) class="btn btn-warning">Change Boolean of Sale</button>
+
+<input type="text" (keyup.k)='eventOnK($event)'>
